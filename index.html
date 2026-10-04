@@ -56,11 +56,14 @@
             font-size: 16px;
             color: #475569;
             line-height: 1.8;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-align: justify;
         }
         .btn-container {
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
         .whatsapp-btn {
             background-color: #25d366;
@@ -81,6 +84,62 @@
             transform: translateY(-3px);
             box-shadow: 0 12px 25px rgba(37, 211, 102, 0.6);
         }
+        
+        /* হোয়াটসঅ্যাপ চ্যানেল বাটন ও নোটিশ স্টাইল */
+        .channel-notice-box {
+            background: #f8fafc;
+            border: 2px dashed #cbd5e1;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 25px;
+            text-align: left;
+        }
+        .channel-notice-box p {
+            font-size: 14px;
+            color: #334155;
+            margin-bottom: 12px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .channel-features {
+            font-size: 13px;
+            color: #475569;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            list-style-type: none;
+        }
+        .channel-features li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 18px;
+        }
+        .channel-features li::before {
+            content: "✔";
+            color: #0ea5e9;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .channel-btn {
+            background-color: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: block;
+            width: 100%;
+            box-shadow: 0 6px 15px rgba(14, 165, 233, 0.3);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .channel-btn:hover {
+            background-color: #0284c7;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(14, 165, 233, 0.5);
+        }
+
         .footer-text {
             margin-top: 20px;
             font-size: 13px;
@@ -102,6 +161,13 @@
                 font-size: 18px;
                 padding: 15px 20px;
             }
+            .channel-btn {
+                font-size: 16px;
+                padding: 14px 20px;
+            }
+            .channel-notice-box p, .channel-features {
+                font-size: 13px;
+            }
         }
     </style>
 </head>
@@ -112,21 +178,40 @@
         <h1>সম্পূর্ণ ফ্রিতে শিখুন সিক্রেট মানি মেকিং কোর্স</h1>
         
         <p>
-            আমরা আপনাকে সম্পূর্ণ ফ্রিতে শেখাবো সিক্রেট মানি মেকিং কোর্স। যার মাধ্যমে আপনি ঘরে বসেই সম্পূর্ণ ফ্রিতে ইনস্ট্যান্ট ইনকাম করতে এবং তা উত্তোলন করতে পারবেন। অলরেডি আমাদের গ্রুপে ১০০ জনের উপরে মেম্বার নিয়মিত ইনকাম করছে এবং হাজারো পেমেন্ট প্রুফ আমাদের গ্রুপে দেওয়া আছে। খুব শীঘ্রই আমরা লাইভ ক্লাসের মাধ্যমে এ বিষয়ে বিস্তারিত আলোচনা করব এবং আপনাদের কাজ বুঝিয়ে দেব। 
+            আমরা আপনাকে সম্পূর্ণ ফ্রিতে শেখাবো সিক্রেট মানি মেকিং কোর্স। যার মাধ্যমে আপনি ঘরে বসেই সম্পূর্ণ ফ্রিতে ইনস্ট্যান্ট ইনকাম করতে এবং তা উত্তোলন করতে পারবেন। অলরেডি আমাদের গ্রুপে ১০০ জনের উপরে মেম্বার নিয়মিত ইনকাম করছে এবং হাজারো পেমেন্ট প্রুফ আমাদের গ্রুপে দেওয়া আছে। খুব শীঘ্রই আমরা লাইভ ক্লাসের মাধ্যমে এ বিষয়ে বিস্তারিত আলোচনা করব এবং আপনাদের কাজ বুঝিয়ে দেব। 
         </p>
 
         <p>
-            তাই আর দেরি না করে, বিস্তারিত জানতে এবং সম্পূর্ণ ফ্রিতে কাজ শিখে ইনকাম শুরু করতে নিচের বড় বাটনটিতে ক্লিক করে এখনই আমাদের অফিশিয়াল WhatsApp গ্রুপে জয়েন করুন।
+            তাই আর দেরি না করে, বিস্তারিত জানতে এবং সম্পূর্ণ ফ্রিতে কাজ শিখে ইনকাম শুরু করতে নিচের বাটনটিতে ক্লিক করে এখনই আমাদের অফিশিয়াল WhatsApp গ্রুপে জয়েন করুন।
         </p>
 
         <div class="btn-container">
+            <!-- হোয়াটসঅ্যাপ গ্রুপ বাটন -->
             <a href="https://chat.whatsapp.com/GMR8egGHYIQLkGEZa4Tr5K" target="_blank" class="whatsapp-btn">
-                💬 হোয়াটসঅ্যাপ গ্রুপে জয়েন করুন
+                💬 হোয়াটসঅ্যাপ গ্রুপে জয়েন করুন
+            </a>
+        </div>
+
+        <!-- চ্যানেল সতর্কবার্তা ও বিবরণ বক্স -->
+        <div class="channel-notice-box">
+            <p>
+                ⚠️ <strong>জরুরি অনুরোধ:</strong> গ্রুপ নষ্ট হলে লাইভ ক্লাস বা যোগাযোগ মিস করতে পারেন। তাই গ্রুপে জয়েনের পাশাপাশি অবশ্যই আমাদের <strong>হোয়াটসঅ্যাপ চ্যানেলটি ফলো করুন</strong>। ইনশাআল্লাহ ভালো কিছু শিখতে পারবেন!
+            </p>
+            
+            <ul class="channel-features">
+                <li>চ্যানেলে প্রতিদিনের পেমেন্ট প্রুফ শেয়ার করা হয়।</li>
+                <li>কী নিয়ে কাজ করব এবং বিস্তারিত আলোচনা পাবেন।</li>
+                <li>কোনো আপডেট বা ক্লাস মিস করতে না চাইলে ফলো করে রাখুন।</li>
+            </ul>
+            
+            <!-- হোয়াটসঅ্যাপ চ্যানেল বাটন -->
+            <a href="https://whatsapp.com/channel/0029VbDpgHA3gvWiePjtiw44" target="_blank" class="channel-btn">
+                📢 হোয়াটসঅ্যাপ চ্যানেল ফলো করুন
             </a>
         </div>
 
         <div class="footer-text">
-            ধন্যবাদ! দ্রুত জয়েন করুন, সিট সংখ্যা সীমিত।
+            ধন্যবাদ! দ্রুত জয়েন করুন, সিট সংখ্যা সীমিত।
         </div>
     </div>
 
